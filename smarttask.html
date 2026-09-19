@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartTask | CodeVision</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <h1>CodeVision</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#portfolio">Portfólio</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO DO PROJETO -->
+        <section class="projeto-hero">
+
+            <div class="projeto-hero-content">
+
+                <p class="tag">PROJETO 03 • SISTEMA WEB</p>
+
+                <h2>
+                    Smart<span>Task</span>
+                </h2>
+
+                <p>
+                    Um sistema web desenvolvido para organizar tarefas,
+                    definir prioridades e acompanhar atividades de forma
+                    simples, prática e eficiente.
+                </p>
+
+                <div class="projeto-aviso">
+                    Projeto demonstrativo desenvolvido pela CodeVision.
+                </div>
+
+                <a href="#sistema" class="botao">
+                    Explorar sistema
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESAFIO -->
+        <section class="secao fit-desafio">
+
+            <p class="tag">O DESAFIO</p>
+
+            <h2>
+                Organização para o dia a dia
+            </h2>
+
+            <p class="descricao-projeto">
+                O SmartTask foi pensado para solucionar problemas comuns
+                relacionados à organização e ao acompanhamento de tarefas.
+            </p>
+
+
+            <div class="fit-desafio-grid">
+
+                <article class="fit-info-card">
+
+                    <div class="fit-icone">
+                        📋
+                    </div>
+
+                    <h3>
+                        Tarefas espalhadas
+                    </h3>
+
+                    <p>
+                        Muitas atividades podem acabar espalhadas em
+                        diferentes lugares, dificultando a organização.
+                    </p>
+
+                </article>
+
+
+                <article class="fit-info-card">
+
+                    <div class="fit-icone">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Falta de prioridade
+                    </h3>
+
+                    <p>
+                        Nem todas as tarefas possuem o mesmo nível de
+                        importância ou urgência.
+                    </p>
+
+                </article>
+
+
+                <article class="fit-info-card">
+
+                    <div class="fit-icone">
+                        📊
+                    </div>
+
+                    <h3>
+                        Acompanhamento
+                    </h3>
+
+                    <p>
+                        É importante acompanhar o que já foi realizado
+                        e o que ainda precisa ser concluído.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SISTEMA -->
+        <section id="sistema" class="secao smart-sistema">
+
+            <div class="smart-intro">
+
+                <p class="tag">
+                    SISTEMA INTERATIVO
+                </p>
+
+                <h2>
+                    Organize suas <span>tarefas.</span>
+                </h2>
+
+                <p>
+                    Adicione tarefas, defina prioridades e categorias,
+                    acompanhe seu progresso e marque atividades
+                    concluídas.
+                </p>
+
+            </div>
+
+
+            <!-- PAINEL -->
+            <div class="smart-dashboard">
+
+                <div class="smart-metric">
+
+                    <span>
+                        Total de tarefas
+                    </span>
+
+                    <strong id="totalTarefas">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="smart-metric">
+
+                    <span>
+                        Tarefas pendentes
+                    </span>
+
+                    <strong id="tarefasPendentes">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="smart-metric">
+
+                    <span>
+                        Tarefas concluídas
+                    </span>
+
+                    <strong id="tarefasConcluidas">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+            <div class="smart-formulario">
+
+                <h3>
+                    Adicionar nova tarefa
+                </h3>
+
+                <div class="smart-form">
+
+                    <input
+                        type="text"
+                        id="nomeTarefa"
+                        placeholder="Digite o nome da tarefa"
+                    >
+
+
+                    <select id="prioridadeTarefa">
+
+                        <option value="Baixa">
+                            Prioridade baixa
+                        </option>
+
+                        <option value="Média" selected>
+                            Prioridade média
+                        </option>
+
+                        <option value="Alta">
+                            Prioridade alta
+                        </option>
+
+                    </select>
+
+
+                    <select id="categoriaTarefa">
+
+                        <option value="Estudos">
+                            Estudos
+                        </option>
+
+                        <option value="Trabalho">
+                            Trabalho
+                        </option>
+
+                        <option value="Pessoal">
+                            Pessoal
+                        </option>
+
+                        <option value="Outros">
+                            Outros
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        type="button"
+                        id="adicionarTarefa"
+                        class="botao"
+                    >
+                        Adicionar tarefa
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="smart-filtros">
+
+                <button
+                    type="button"
+                    class="smart-filtro ativo"
+                    data-filtro="todas"
+                >
+                    Todas
+                </button>
+
+
+                <button
+                    type="button"
+                    class="smart-filtro"
+                    data-filtro="pendentes"
+                >
+                    Pendentes
+                </button>
+
+
+                <button
+                    type="button"
+                    class="smart-filtro"
+                    data-filtro="concluidas"
+                >
+                    Concluídas
+                </button>
+
+            </div>
+
+
+            <!-- LISTA DE TAREFAS -->
+            <div class="smart-lista">
+
+                <div id="listaTarefas">
+
+                    <div class="smart-vazio">
+                        Nenhuma tarefa cadastrada ainda.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECNOLOGIAS -->
+        <section class="secao tecnologia">
+
+            <p class="tag">
+                TECNOLOGIAS
+            </p>
+
+            <h2>
+                Construído com tecnologia web
+            </h2>
+
+            <div class="tecnologias">
+
+                <span>
+                    HTML5
+                </span>
+
+                <span>
+                    CSS3
+                </span>
+
+                <span>
+                    JavaScript
+                </span>
+
+                <span>
+                    LocalStorage
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+        <section class="projeto-final">
+
+            <p class="tag">
+                CODEVISION
+            </p>
+
+            <h2>
+                Gostou do projeto?
+            </h2>
+
+            <p>
+                Conheça outros projetos desenvolvidos pela CodeVision.
+            </p>
+
+            <a
+                href="index.html#portfolio"
+                class="botao"
+            >
+                Explorar portfólio →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © 2026 CodeVision. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="smarttask.js"></script>
+
+</body>
+
+</html>
