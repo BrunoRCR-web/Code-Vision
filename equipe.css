@@ -1,0 +1,722 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 102, 255, 0.10),
+            transparent 35%
+        ),
+        #070a10;
+
+    color: #f5f7fa;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.topo {
+
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(7,10,16,0.92);
+
+    backdrop-filter: blur(12px);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+
+.logo-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: linear-gradient(
+        135deg,
+        #08c8ff,
+        #176dff
+    );
+
+    color: white;
+
+    font-weight: 800;
+
+    font-size: 18px;
+
+    box-shadow:
+        0 0 20px rgba(0,170,255,0.25);
+}
+
+
+.logo-texto {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.logo-texto strong {
+
+    font-size: 22px;
+
+    letter-spacing: -0.5px;
+}
+
+
+.logo-texto span {
+
+    margin-top: 4px;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #858b9a;
+}
+
+
+.voltar {
+
+    color: #55baff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+.voltar:hover {
+
+    color: white;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 7%;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+
+    max-width: 750px;
+
+    margin-bottom: 60px;
+}
+
+
+.tag {
+
+    color: #42aaff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+
+.intro h1 {
+
+    font-size: clamp(42px, 7vw, 76px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+
+.intro h1 span {
+
+    color: #2697ff;
+}
+
+
+.descricao {
+
+    color: #9da5b5;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+}
+
+
+/* =========================
+   EQUIPE
+========================= */
+
+.equipe-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+.membro {
+
+    padding: 30px;
+
+    min-height: 390px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.045),
+            rgba(255,255,255,0.015)
+        );
+
+    border: 1px solid rgba(255,255,255,0.09);
+
+    transition: 0.35s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.membro::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    background: #008cff;
+
+    opacity: 0.06;
+
+    border-radius: 50%;
+
+    filter: blur(45px);
+
+    top: -70px;
+
+    right: -70px;
+}
+
+
+.membro:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(35,156,255,0.4);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.3);
+}
+
+
+.membro-topo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+}
+
+
+.numero {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.cargo {
+
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    background: rgba(255,255,255,0.04);
+
+    color: #687080;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* AVATAR */
+
+.avatar {
+
+    width: 76px;
+
+    height: 76px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #04c8ff,
+            #254eff
+        );
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 30px rgba(0,140,255,0.18);
+}
+
+
+.membro-info h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+.funcao {
+
+    color: #8e96a5;
+
+    font-size: 15px;
+}
+
+
+.linha {
+
+    height: 1px;
+
+    background: rgba(255,255,255,0.08);
+
+    margin: 25px 0 20px;
+}
+
+
+.status {
+
+    color: #969dab;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.status span {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #00d69b;
+
+    box-shadow:
+        0 0 10px rgba(0,214,155,0.6);
+}
+
+
+/* =========================
+   CANAIS
+========================= */
+
+.canais {
+
+    margin-top: 110px;
+}
+
+
+.canais-cabecalho h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.canais-cabecalho > div > p:last-child {
+
+    color: #8f97a6;
+
+    line-height: 1.7;
+}
+
+
+.canais-grid {
+
+    display: grid;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.canal {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.025);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+}
+
+
+.canal:hover {
+
+    transform: translateX(6px);
+
+    border-color: rgba(25,165,255,0.4);
+
+    background: rgba(25,165,255,0.04);
+}
+
+
+.canal-icone {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    flex-shrink: 0;
+}
+
+
+.whatsapp {
+
+    background: rgba(0,210,150,0.1);
+
+    color: #00d49a;
+}
+
+
+.instagram {
+
+    background: rgba(220,50,170,0.1);
+
+    color: #e85ac3;
+}
+
+
+.email {
+
+    background: rgba(0,190,255,0.1);
+
+    color: #00c5ff;
+}
+
+
+.canal-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    flex: 1;
+}
+
+
+.canal-info span {
+
+    color: #8e96a5;
+
+    font-size: 14px;
+}
+
+
+.canal-info strong {
+
+    font-size: 17px;
+}
+
+
+.seta {
+
+    font-size: 25px;
+
+    color: #6d7686;
+}
+
+
+/* =========================
+   ATENÇÃO
+========================= */
+
+.atencao {
+
+    margin-top: 35px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0,185,255,0.25);
+
+    background: rgba(0,140,255,0.035);
+}
+
+
+.atencao p {
+
+    color: #12c7ff;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.atencao span {
+
+    color: #aeb5c2;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.07);
+
+    color: #646b79;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 800px) {
+
+    main {
+
+        padding-top: 55px;
+    }
+
+
+    .equipe-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .intro h1 {
+
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .membro {
+
+        min-height: auto;
+    }
+
+
+    .topo {
+
+        padding: 0 5%;
+    }
+
+
+    .voltar {
+
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .logo-texto strong {
+
+        font-size: 19px;
+    }
+
+
+    .logo-icon {
+
+        width: 43px;
+
+        height: 43px;
+    }
+
+
+    .intro h1 {
+
+        font-size: 42px;
+    }
+
+
+    .canais-cabecalho h2 {
+
+        font-size: 30px;
+    }
+
+}

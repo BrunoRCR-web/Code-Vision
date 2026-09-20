@@ -2714,3 +2714,664 @@ footer p {
     }
 
 }
+/* LOGO CODEVISION */
+
+.logo {
+    width: 180px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+/* =========================
+   EQUIPE CODEVISION
+========================= */
+
+.equipe {
+    position: relative;
+}
+
+.intro-equipe {
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.intro-equipe h2 {
+    margin-bottom: 22px;
+}
+
+.intro-equipe h2 span {
+    color: #2697ff;
+}
+
+.descricao-equipe {
+    color: #9da5b5;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+
+/* CARDS */
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.membro {
+    padding: 30px;
+    min-height: 390px;
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.045),
+            rgba(255,255,255,0.015)
+        );
+
+    border: 1px solid rgba(255,255,255,0.09);
+
+    transition: 0.35s;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.membro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    background: #008cff;
+
+    opacity: 0.06;
+
+    border-radius: 50%;
+
+    filter: blur(45px);
+
+    top: -70px;
+    right: -70px;
+}
+
+.membro:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(35,156,255,0.4);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.3);
+}
+
+.membro-topo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+}
+
+.numero {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+.cargo {
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    background: rgba(255,255,255,0.04);
+
+    color: #687080;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* AVATAR */
+
+.avatar {
+    width: 76px;
+    height: 76px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #04c8ff,
+            #254eff
+        );
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 30px rgba(0,140,255,0.18);
+}
+
+.membro-info h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.funcao {
+    color: #8e96a5;
+    font-size: 15px;
+}
+
+.linha {
+    height: 1px;
+
+    background: rgba(255,255,255,0.08);
+
+    margin: 25px 0 20px;
+}
+
+.status {
+    color: #969dab;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.status span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #00d69b;
+
+    box-shadow:
+        0 0 10px rgba(0,214,155,0.6);
+}
+
+
+/* CANAIS */
+
+.canais-equipe {
+    margin-top: 100px;
+}
+
+.canais-cabecalho h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.canais-cabecalho p:not(.tag) {
+    color: #8f97a6;
+    line-height: 1.7;
+}
+
+.canais-grid {
+    display: grid;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.canal {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.025);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+}
+
+.canal:hover {
+    transform: translateX(6px);
+
+    border-color: rgba(25,165,255,0.4);
+
+    background: rgba(25,165,255,0.04);
+}
+
+.canal-icone {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    flex-shrink: 0;
+}
+
+.whatsapp {
+    background: rgba(0,210,150,0.1);
+    color: #00d49a;
+}
+
+.instagram {
+    background: rgba(220,50,170,0.1);
+    color: #e85ac3;
+}
+
+.email {
+    background: rgba(0,190,255,0.1);
+    color: #00c5ff;
+}
+
+.canal-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    flex: 1;
+}
+
+.canal-info span {
+    color: #8e96a5;
+    font-size: 14px;
+}
+
+.canal-info strong {
+    font-size: 17px;
+}
+
+.seta {
+    font-size: 25px;
+    color: #6d7686;
+}
+
+
+/* AVISO */
+
+.atencao {
+    margin-top: 35px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0,185,255,0.25);
+
+    background: rgba(0,140,255,0.035);
+}
+
+.atencao p {
+    color: #12c7ff;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.atencao span {
+    color: #aeb5c2;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+
+/* EQUIPE NO CELULAR */
+
+@media (max-width: 800px) {
+
+    /* ============================= */
+/* EQUIPE - CARDS */
+/* ============================= */
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.membro {
+    position: relative;
+    background: linear-gradient(145deg, #111722, #0b0f17);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 26px;
+    padding: 28px;
+    min-height: 430px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.membro::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #168cff;
+    filter: blur(100px);
+    opacity: 0.08;
+    top: -80px;
+    right: -70px;
+}
+
+.membro:hover {
+    transform: translateY(-6px);
+    border-color: rgba(55, 155, 255, 0.45);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.membro-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.numero {
+    width: 82px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    color: #55a8ff;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.cargo {
+    padding: 13px 20px;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    color: #788292;
+    font-size: 12px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* AVATAR */
+
+.avatar {
+    width: 110px;
+    height: 110px;
+
+    margin-top: 48px;
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #11b4ff, #246cff);
+
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 30px rgba(24, 139, 255, 0.30);
+}
+
+/* INFORMAÇÕES */
+
+.membro-info h3 {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.funcao {
+    margin-top: 10px;
+
+    color: #929aaa;
+    font-size: 18px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+
+    margin: 28px 0;
+
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #929aaa;
+    font-size: 16px;
+}
+
+.status span {
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+    background: #00e6a8;
+
+    box-shadow: 0 0 14px rgba(0, 230, 168, 0.7);
+}
+
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .equipe-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 35px;
+    }
+
+    .membro {
+        min-height: auto;
+        padding: 26px;
+    }
+
+    .avatar {
+        margin-top: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .membro {
+        padding: 22px;
+        border-radius: 24px;
+    }
+
+    .numero {
+        width: 72px;
+        height: 72px;
+        border-radius: 20px;
+
+        font-size: 30px;
+    }
+
+    .cargo {
+        padding: 11px 14px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+
+        margin-top: 32px;
+        margin-bottom: 22px;
+
+        font-size: 32px;
+    }
+
+    .membro-info h3 {
+        font-size: 27px;
+    }
+
+    .funcao {
+        font-size: 17px;
+    }
+
+    .linha {
+        margin: 23px 0;
+    }
+
+    .status {
+        font-size: 15px;
+    }
+}
+}
+/* ============================= */
+/* MENU MOBILE */
+/* ============================= */
+
+.menu-mobile {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: #ffffff;
+    font-size: 30px;
+
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        position: relative;
+    }
+
+    .menu-mobile {
+        display: block;
+        z-index: 1001;
+    }
+
+    header nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        padding: 20px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        background: rgba(8, 12, 20, 0.98);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(50, 150, 255, 0.25);
+
+        z-index: 1000;
+    }
+
+    header nav.menu-aberto {
+        display: flex;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 700px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        margin-right: auto;
+    }
+
+    .menu-mobile {
+        margin-left: auto;
+        display: block;
+    }
+
+}
