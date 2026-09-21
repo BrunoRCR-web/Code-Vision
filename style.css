@@ -129,7 +129,7 @@ nav a:hover {
     padding: 16px 30px;
 
     background: #1683ff;
-    color: #ffffff;
+    color: #050810;
 
     border-radius: 10px;
 
@@ -258,7 +258,7 @@ footer {
 }
 
 footer p {
-    color: #69778b;
+    color: #7f8da3;
     font-size: 14px;
 }
 
@@ -3361,17 +3361,35 @@ footer p {
 
     header {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+
+        position: relative;
+
+        padding: 18px 20px;
+        min-height: 120px;
     }
 
     header .logo {
-        margin-right: auto;
+        width: 230px;
+        height: 105px;
+
+        object-fit: contain;
+        margin: 0 auto;
     }
 
     .menu-mobile {
-        margin-left: auto;
         display: block;
+
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        margin: 0;
+
+        font-size: 34px;
     }
 
 }
