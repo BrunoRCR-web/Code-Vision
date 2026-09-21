@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codevisiondev.github.io/sitemap.xml
